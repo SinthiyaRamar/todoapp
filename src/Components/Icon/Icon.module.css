@@ -1,0 +1,16 @@
+.deleteIcon{
+    font-size: 2.5vh;
+    grid-column-start: 5;
+}
+.deleteIcon:hover{
+    color: rgb(255, 95, 95);
+    cursor: pointer;
+}
+.searchicon{
+    font-size: 2.5vh;
+}
+.button{
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu&family=El+Messiri:wght@600&family=Josefin+Sans:ital,wght@1,300&family=League+Spartan&family=Mukta&family=Nerko+One&family=Open+Sans:ital@1&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono&family=Roboto:ital@1&family=Rubik&family=Solway:wght@500&display=swap");
+
+*{
+    user-select: none;
+}
+.Homediv{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.backgrounddiv{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/assets/bg-desktop-light.jpg');
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 27% 30% 25%;
+    place-items: center;
+}
+.tododiv{
+    width: 100%;
+    height: 100%;
+}
+.todotextdiv{
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    font-size: 2.2vh;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Josefin Sans'; */
+    letter-spacing: 1.3vh;
+    color: white;
+}
+.themeicon{
+    width: 2%;
+    height: 31%;
+}
+.inputdiv{
+    grid-row-start: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1%;
+}
+
+
+
+.tododiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todocontentdiv{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 63%;
+    height: 110%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: -12.5vh;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+.tododetails{
+    grid-row-start: 3;
+    width: 96%;
+    height: 98%;
+    padding-top: 2%;
+    padding-right: 4%;
+    cursor: pointer;
+    text-align: right;
+    font-size: 2vh;
+}
+.tododetailsul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14%;
+    list-style: none;
+
+}
+.todocontentul{
+    width: 94%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 3%;
+    padding-right: 3%;
+    list-style: none;
+    align-items: center;
+    grid-row-start: 2;
+    
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.checkbox{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    transition: 0.5s;
+}
+.checkbox:checked{
+    background: linear-gradient(to bottom right, #741A98, #8EC0E3);
+     /* background-color: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%); */
+}   
+.todocontentlidiv{
+    width: 100%;
+    height: 100%;
+    /* padding: 3%; */
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+    place-items: center;
+    font-size: 3vh;
+}
+.removebutton{
+    width: 45%;
+    height: 50%;
+}
+.searchdetails{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 20% 50% 20% 5%;
+    grid-template-rows: 100%;
+    place-items: center;
+}
+.searchicon{
+    font-size: 2.5vh;
+}
+.searchinput{
+    width: 100%;
+    height: 50%;
+    border:none;
+    outline: none;
+    font-size: 2vh;
+    border-bottom: 1px solid black;
+}
+.deleteIcon{
+    font-size: 2.5vh;
+    grid-column-start: 5;
+}
+.deleteIcon:hover{
+    color: rgb(255, 95, 95);
+    cursor: pointer;
+}
+.filters{
+    grid-column-start: 4;
+    width: 100%;
+    height: 100%;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+}
+select{
+    font-size: 1.8vh;
+}
+.emptyList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+.emptyList:hover{
+    color: red;
+}
+.emptytodoimg{
+    width: 25%;
+    height: 35%;
+}
